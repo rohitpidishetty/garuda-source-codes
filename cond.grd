@@ -1,0 +1,37 @@
+main() {
+  message = "Lets work with conditional statements"
+  print(message)
+  a = 10 > 2
+  print(a)
+  c = not a
+  if(a) {
+    b = 10 > 2
+    if(b) {
+      message = "a is true and b is true"
+      print(message)
+    }
+    elif(a) {
+      message = "a is true"
+      print(message)
+    }
+    else {
+      print(b)
+    }
+  }
+  elif(c) {
+    print(c)
+    if(c) {
+      print(c)
+    }
+    else {
+      xb = 100
+      print(xb)
+    }
+  }
+  else {
+    x = 19
+    print(x)
+  }
+  exit = "we are here"
+  print(exit)
+}

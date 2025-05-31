@@ -1,0 +1,38 @@
+main() {
+  a = 5
+  dict<int, str> map = new dict<>(a)
+  map.set(1, "20")
+  map.set(12, "87")
+  map.set(4, "340")
+  val = map.get(12)
+  print(val)
+  map.remove(12)
+  val = map.get(12)
+  print(val)
+  map.clear()
+  val = map.get(1)
+  print(val)
+  map.set(2, "hi")
+  val = map.get(2)
+  print(val)
+  # Locking the variable map
+  map.immutable()
+  map.mutable()
+  map.set(1, "new")
+  keys = map.keys()
+  keys.print()
+  vals = map.values()
+  vals.print()
+  items = map.items()
+  items.print()
+  map.set(4, "hello")
+  items = map.items()
+  items.print()
+  # ---------------------
+  dict<str, str> assoc = new dict<>(10)
+  value = "hello"
+  assoc.set("key", value)
+  assoc.set("email", "qwerty@gmail.com")
+  pairs = assoc.items()
+  pairs.print()
+}

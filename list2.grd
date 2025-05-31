@@ -1,0 +1,14 @@
+main() {
+  list<int> l2 = new list<>()
+  l2.push(11)
+  l2.push(12)
+  l2.push(13)
+  l2.push(14)
+  l2.print()
+  s = l2.contains(98)
+  s1 = s == False
+  print(s)
+  print(s1)
+  print(s)
+  
+}

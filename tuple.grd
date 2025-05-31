@@ -1,0 +1,19 @@
+main() {
+  list<str> buffer = new list<>()
+  buffer.push("ax")
+  buffer.push("bx")
+  buffer.push("cx")
+  buffer.push("dx")
+  buffer.immutable()
+  # Works just like tuple
+  buffer.mutable()
+  buffer.print()
+  buffer.push("ex")
+  buffer.print()
+  buffer.pop()
+  buffer.print()
+  s = buffer.contains("cx")
+  print(s)
+  idx = buffer.size()
+  print(idx) 
+}

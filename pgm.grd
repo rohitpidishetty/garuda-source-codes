@@ -1,0 +1,15 @@
+a = 100
+bx = a
+msg = "Hello, world\n"
+
+main() {
+  cx = 12
+  sq = cx
+  wish = "Good morning"
+  name = "Rohit Acharya"
+  msg2 = " it is "
+  time = 9
+  msg3 = " I got "
+  marks = 98.45
+  print(wish, name, msg2, time, msg3, marks)
+}

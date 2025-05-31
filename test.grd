@@ -1,0 +1,26 @@
+main() {
+  # Capitalize method in GARUDA programming language.
+  name = "hello world, this is my new programming language"
+  tokens = name.split()
+  del = " "
+  n = tokens.size()
+  list<str> uct = new list<>()
+  for i in (0, n, 1) {
+    chunk = tokens.get(i)
+    len = chunk.length()
+    fc = chunk.charAt(0)
+    ucfc = fc.upperCase()
+    ss = chunk.subString(1, len)
+    list<str> buf = new list<>()
+    status = i != 0
+    if(status) {
+      buf.push(del)
+    }
+    buf.push(ucfc)
+    buf.push(ss)
+    fw = buf.toString()
+    uct.push(fw)
+  }
+  final = uct.toString()
+  print(final)
+}

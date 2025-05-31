@@ -1,0 +1,7 @@
+a = 10
+main() {
+     msg = "Hello, world\n"
+     num = 1
+     print(msg)
+     print(a)
+}

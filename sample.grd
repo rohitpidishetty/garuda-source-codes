@@ -1,0 +1,65 @@
+# Program starts
+a = 10
+b = "hello"
+marks = 98.12
+c = b
+
+tot = a+marks
+
+func xyz(a,b,c) {
+  print(a)
+  a = 1
+  print(a)
+  c = a
+}
+
+func abs23(a) {
+  print(a)
+  a = 1
+  print(a)
+  c = a
+}
+
+main() {
+  nl = "\n"
+  # This is how you can add comments to your code
+  print(tot)
+  print(nl)
+  sd = 4.76
+  xc = 2
+  msg = "hello"
+  word = "hello, world"
+  print(word, 10, msg, sd)
+  a = 1
+  ab = a/sd*xc-87
+  xc0 = 2 + ab
+  print(nl)
+  print(ab)
+  print(nl)
+  math = 97
+  physics = 92
+  chemistry = 91
+  tot = math+physics+chemistry
+  print(tot)
+  print(nl)
+  tot = tot/3
+  tot = tot + 10
+  list<int> l1 = new list<>()
+  l1.push(a)
+  l1.push(234)
+  list<float> l2 = new list<>()
+  a2 = 1.0
+  l2.push(a2)
+  l2.push(34.4)
+  list<str> l3 = new list<>()
+  l3.push("ax")
+  l3.push("bx")
+  l3.push("ax")
+  l3.push("cx")
+  l3.print()
+  l3.lock()
+  # l3.unlock()
+  # l3.push("cx")
+}
+
+

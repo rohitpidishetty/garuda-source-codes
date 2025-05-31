@@ -1,0 +1,35 @@
+main() {
+  set<int> s = new set<>()
+  s.add(10)
+  s.add(20)
+  s.add(30)
+  s.add(40)
+  s.add(50)
+  s.discard(30)
+  # s.clear()
+  e = s.elements()
+  e.print()
+  s.add(45)
+  e = s.elements()
+  e.print()
+
+  set<int> s2 = new set<>()
+  s2.add(10)
+  s2.add(60)
+  s2.add(70)
+  s2.add(80)
+  s2.add(90)
+
+  # s.union(s2)
+  # e = s.elements()
+  # e.print()
+
+  # s.difference(s2)
+  # e = s.elements()
+  # e.print()
+
+  ins = s.intersection(s2)
+  ins.print()
+
+
+}

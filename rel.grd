@@ -1,0 +1,19 @@
+main() {
+  msg_ = "Rel Ops"
+  print(msg_)
+  b = 23
+  status = 12 > 34
+  print(status)
+  status2 = 34 != b
+  print(status2)
+  s3 = status and status2
+  print(s3, msg_)
+  s4 = not s3
+  print(s4)
+  s_4 = not s4
+  print(s_4)
+  s_4 = not s_4
+  print(s_4)
+  ex = s_4 == True
+  print(ex)
+}

@@ -1,0 +1,61 @@
+main() {
+  name = "rohit acharya"
+  name2 = "rohit"
+  name = name.upperCase()
+  name = name.lowerCase()
+  len = name.length()
+  ch = name.charAt(2)
+  ch = name.subString(0,3)
+  eq = name.equals(name2)
+  stream = "hi"
+  co = name2.contains(stream)
+  stream = "ac"
+  co = name.firstIndex(stream)
+  stream = "h"
+  co = name.lastIndex(stream)
+  stream = "ro"
+  co = name.startsWith(stream)
+  stream = "roi"
+  co = name.startsWith(stream)
+  stream = "ya"
+  co = name.endsWith(stream)
+  message = "                    hello                     "
+  n = message.length()
+  message = message.trim()
+  n = message.length()
+  message = "Hello alice how are you? would you like to have some code alice?"
+  target = "alice"
+  replacer = "bob"
+  message = message.replace(target, replacer)
+  a = "hey"
+  b = "bob"
+  c = "how are you"
+  d = " "
+  message = d.join(a,b,c)
+  bin = name.toBinary()
+  hex = name.toHexa()
+  print(hex)
+  oct = name.toOcta()
+  print(oct)
+  message = message.reverse()
+  print(message)
+  num = "12344"
+  status = num.isNum()
+  status = name2.isAlpha()
+  alphnum = "1234aee4"
+  status = alphnum.isAlphaNum()
+  emstr = "dfd"
+  status = emstr.isEmpty()
+  message = "Hello alice how are you? would you like to have some code alice?"
+  bucket = message.split()
+  bucket.print()
+  bucket.push(emstr)
+  #bucket = message.toCharArray()
+  n = bucket.size()
+  for i in (0, n, 1) {
+    ele = bucket.get(i)
+    print(ele)
+  }
+  enc_name = "rohit".encrypt()
+  dec_name = "0f32xtugpu0f45x70f43x0f46x0f42x40fgj101".decrypt()
+}

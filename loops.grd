@@ -1,0 +1,28 @@
+main() {
+  state = False
+  print(state)
+  state = True
+  print(state)
+  compute = 76 / 23
+  print(compute)
+  res = (int) compute
+  print(res)
+  stringify = (str) res
+  print(stringify)
+  num = (float) stringify
+  print(num)
+
+  for i in (1, 10, 1) {
+    con = i == 2
+    if(con) {
+      avoid
+    }
+    print(i)
+    con2 = i == 7
+    if(con2) {
+      abort
+    }
+  }
+  msg = "Loop exited"
+  print(msg)
+}
