@@ -1,0 +1,13 @@
+# Fetching odd numbers ranging from 1 to 100, and storing it in a list.
+
+main() {
+  list<int> oddNumbers = new list<>()
+  for number in (1, 101, 1) {
+    result = number % 2
+    isOdd = result != 0
+    if(isOdd) {
+      oddNumbers.push(number)
+    }
+  }
+  oddNumbers.print()
+}

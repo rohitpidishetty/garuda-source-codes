@@ -1,0 +1,20 @@
+# Fetching prime numbers ranging from 1 to 100, and storing it in a list.
+
+main() {
+  list<int> primeNumbers = new list<>()
+  for numerator in (1, 101, 1) {
+    isPrime = True
+    for denominator in (2, numerator, 1) {
+      result = numerator % denominator
+      factored = result == 0
+      if(factored) {
+        isPrime = False
+        abort
+      }
+    } 
+    if(isPrime) {
+      primeNumbers.push(numerator)
+    }
+  }
+  primeNumbers.print()
+}
