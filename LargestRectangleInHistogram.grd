@@ -1,0 +1,121 @@
+main() {
+  list<int> heights = new list<>()
+  totalHeights = 6
+  heights.push(2)
+  heights.push(1)
+  heights.push(5)
+  heights.push(6)
+  heights.push(2)
+  heights.push(3)
+  heights.print()
+
+  # Left limits
+  list<int> leftLimits = new list<>()
+  list<int> monotonicStack = new list<>()
+
+  # Variables
+  topRef = 0
+  stackMag = -1
+  stackTop = -1
+  building = -1
+  emptyStack = True
+  condition = True
+  limit = -1
+  current = -1
+
+  for i in (0, totalHeights, 1) {
+    current = heights.get(i)
+    emptyStack = monotonicStack.isEmpty()
+    if(emptyStack) {
+      leftLimits.push(0)
+    }
+    else {
+      stackMag = monotonicStack.size()
+      topRef = stackMag - 1
+      stackTop = monotonicStack.get(topRef)
+      building = heights.get(stackTop)
+      condition = building >= current
+      while(condition) {
+        monotonicStack.pop()
+        # Dependencies
+        stackMag = monotonicStack.size()
+        topRef = stackMag - 1
+        stackTop = monotonicStack.get(topRef)
+        building = heights.get(stackTop)
+        condition = building >= current
+      }
+      emptyStack = monotonicStack.isEmpty()
+      if(emptyStack) {
+        leftLimits.push(0)
+      } 
+      else {
+        stackMag = monotonicStack.size()
+        topRef = stackMag - 1
+        stackTop = monotonicStack.get(topRef)
+        limit = stackTop + 1
+        leftLimits.push(limit)
+      }
+    }
+    monotonicStack.push(i)
+  }
+  list<int> rightLimits = new list<>()
+  monotonicStack.clear()
+  #list<int> monotonicStack = new list<>()
+  totalHeights = totalHeights - 1
+  for i in (totalHeights, -1, -1) {
+    current = heights.get(i)
+    emptyStack = monotonicStack.isEmpty()
+    if(emptyStack) {
+      rightLimits.push(totalHeights)
+    }
+    else {
+      stackMag = monotonicStack.size()
+      topRef = stackMag - 1
+      stackTop = monotonicStack.get(topRef)
+      building = heights.get(stackTop)
+      condition = building >= current
+      while(condition) {
+        monotonicStack.pop()
+        # Dependencies
+        stackMag = monotonicStack.size()
+        topRef = stackMag - 1
+        stackTop = monotonicStack.get(topRef)
+        building = heights.get(stackTop)
+        condition = building >= current
+      }
+      emptyStack = monotonicStack.isEmpty()
+      if(emptyStack) {
+        rightLimits.push(totalHeights)
+      } 
+      else {
+        stackMag = monotonicStack.size()
+        topRef = stackMag - 1
+        stackTop = monotonicStack.get(topRef)
+        limit = stackTop - 1
+        rightLimits.push(limit)
+      }
+    }
+    monotonicStack.push(i)
+  }
+  leftLimits.print()
+  rightLimits.reverse()
+  rightLimits.print()
+
+  totalHeights = totalHeights + 1
+  max = -1
+  for i in (0, totalHeights, 1) {
+    height = heights.get(i)
+    rLimit = rightLimits.get(i)
+    lLimit = leftLimits.get(i)
+    width = rLimit - lLimit + 1
+    result = height * width
+    ans = (int) result
+    lowerMax = max < ans
+    if(lowerMax) {
+      max = ans
+    }
+  }
+
+  title = "The largest rectangle in a Histogram is"
+  print(title, max)
+}
