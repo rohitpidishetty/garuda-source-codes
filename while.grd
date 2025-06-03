@@ -1,0 +1,10 @@
+main() {
+  i = 0
+  con = i < 5
+  while(con) {
+    print(i)
+    i = i + 1
+    # Dependency list, add the items into this list which could possibly mutate over iteration
+    [con]
+  }
+}
