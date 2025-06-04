@@ -1,0 +1,46 @@
+main() {
+  list<int> elements = new list<>()
+  elements.push(1)
+  elements.push(2)
+  elements.push(3)
+  elements.push(4)
+  elements.push(5)
+  elements.push(6)
+  elements.push(7)
+  elements.push(8)
+  elements.push(9)
+  elements.push(10)
+  
+  search = 4
+  found = False
+  n = elements.size()
+  n = n - 1
+  i, j = 0, n
+  condition = i <= j
+  while(condition) {
+    s = i + j
+    m = s / 2
+    mid = elements.get(m)
+    case1 = search == mid
+    case2 = search < mid
+    if(case1) {
+      found = True
+      abort
+    }
+    elif(case2) {
+      j = m - 1
+    }
+    else {
+      i = m + 1
+    }
+    [condition]
+  }
+  if(found) {
+    foundKey = "The element is found at the index"
+    print(foundKey, i)
+  }
+  else {
+    error = "The element is not present in the list"
+    print(error)
+  }
+}
