@@ -1,6 +1,6 @@
 main() {
-  message = "Lets work with conditional statements"
-  print(message)
+  message1 = "Lets work with conditional statements"
+  print(message1)
   a = 10 > 2
   print(a)
   c = not a
