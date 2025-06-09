@@ -1,0 +1,11 @@
+main() {
+  list<int> vector1 = new list<>()
+  vector1.push(1)
+  vector1.push(2)
+  vector1.push(3)
+  list<int> vector2 = new list<>()
+  vector2.deepCopy(vector1)
+  vector2.push(4)
+  vector1.print()
+  vector2.print()
+}
