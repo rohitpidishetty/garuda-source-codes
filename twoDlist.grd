@@ -1,0 +1,37 @@
+main() {
+  list<int> vector1 = new list<>()
+  vector1.push(1)
+  vector1.push(2)
+  vector1.push(3)
+  list<int> vector2 = new list<>()
+  vector2.push(4)
+  vector2.push(5)
+  vector2.push(6)
+  list<int> vector3 = new list<>()
+  vector3.push(7)
+  vector3.push(8)
+  vector3.push(9)
+
+  # To create a 2 dim matrix
+  list<int*> matrix = new list<2>()
+  matrix.push(vector1)
+  matrix.push(vector2)
+  matrix.push(vector3)  
+  matrix.print()
+
+  list<float*> fmat = new list<2>()
+
+  matLen = matrix.size()
+  for i in (0, matLen, 1) {
+    vec = matrix.get(i)
+    vecLen = vec.size()
+    list<float> fvec = new list<>()
+    for j in (0, vecLen, 1) {
+      v = vec.get(j)
+      res = v * v
+      fvec.push(res)
+    }
+    fvec.print()
+  }
+  fmat.print()
+}
