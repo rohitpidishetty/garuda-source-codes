@@ -4,6 +4,7 @@ main() {
   vector1.push(2)
   vector1.push(3)
   list<int> vector2 = new list<>()
+  # Initializing the list variable to another reference of list type is not safe as it will point the new initialization to the same memory location, thus use deepCopy to create a new copy of the list.
   vector2.deepCopy(vector1)
   vector2.push(4)
   vector1.print()
