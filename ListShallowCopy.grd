@@ -1,0 +1,14 @@
+main() {
+  list<int> vec = new list<>()
+  vec.push(1)
+  vec.push(2)
+  vec.push(3)
+  vec.push(4)
+  vec.push(5)
+  list<int> temp = new list<>()
+  # Shallow copy of the list 'vec'
+  # On shallow copying, the reference object 'vec' will be auto-locked as the program expects the 'vec' to be not modified further.
+  temp = vec
+  temp.push(6)
+  temp.print()
+}
