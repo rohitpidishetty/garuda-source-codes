@@ -1,6 +1,6 @@
 main() {
   list<int> elements = new list<>()
-  #add elements to list.
+  #add elements to list
   elements.push(1)
   elements.push(2)
   elements.push(3)
