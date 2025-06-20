@@ -44,7 +44,7 @@ main() {
   # Work on void caller functions.
   # fnG(name)
   dx = "string"
-  # Work on caller fn
+  # Work on caller fn.
   dx = fn_0_args()
   print(dx)
 }
