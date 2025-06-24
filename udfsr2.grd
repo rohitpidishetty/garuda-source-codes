@@ -1,0 +1,49 @@
+int add = (int a, int b) {
+  c = a + b
+  return c
+}
+
+str sayHello = (str name) {
+  a = 10
+  print(a)
+  a = 20
+  print(a)
+  b = 20.2
+  print(b)
+  print(name)
+  return name
+}
+
+str fn = (str a) {
+  a = "hello"
+  return a
+}
+
+
+int fn_0_args = () {
+  a = 10
+  msg = "Helloooooo"
+  print(msg)
+  return a
+}
+
+
+void fnG = (str a) {
+  print(a)
+}
+
+main() {
+  udfsor = "Lets work with user defined functions"
+  a = 5
+  b = 7
+  res = add(b, a)
+  print(res)
+  name = "rohit"
+  re = "null"
+  re = sayHello(name)
+  print(re)
+  fnG(name)
+  dx = fn_0_args()
+  print(dx)
+}
+
