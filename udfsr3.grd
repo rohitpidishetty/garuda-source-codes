@@ -11,7 +11,7 @@ str castDtInsideFn = () {
 }
 
 main() {
-  a = 10
+  a = 100
   fnG(a)
   caop = castDtInsideFn()
   print(caop)
