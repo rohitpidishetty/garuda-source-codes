@@ -1,0 +1,18 @@
+void fnG = (int a) {
+  x,b,c = a,2,3
+  print(a,b,c,x)
+}
+
+
+str castDtInsideFn = () {
+  a = 10
+  b = (str) a
+  return b
+}
+
+main() {
+  a = 10
+  fnG(a)
+  caop = castDtInsideFn()
+  print(caop)
+}
