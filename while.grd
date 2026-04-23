@@ -5,7 +5,7 @@ main() {
     print(i)
     i = i + 1
     # Dependency list, add the items into this list which could possibly mutate over iteration. Make sure to add in order of mutation (Order matters).
-    # This process is known as dependency injection
+    # This process is known as dependency injection, dependency makes sure that these variables update on every loop.
     [con]
   }
 }
